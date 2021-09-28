@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.signin {
+  border: none;
+  background-color: gray;
+  border-radius: 4rem;
+  padding: 1rem 4rem;
+  font-size: 1.1em;
+  margin-bottom: 1rem;
+  color: white;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+.signin i {
+  font-size: 1.5em;
+  padding-right: 1rem;
+}
+
+.signin:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.google {
+  background-color:  #DB4437;
+}

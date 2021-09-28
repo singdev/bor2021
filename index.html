@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Proza+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./lib/main.js">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/board.css">
+  
+  <title>Octobre 2021 | Bienvenue</title>
+</head>
+<body>
+  
+  <main class="hidden-login">
+    <div class="wrapper">
+      <img src="./images/october-pink.png" alt="Octobre rose" class="logo">
+      <h1>Octobre rose 2021</h1>
+      <p>Participez a la campagne nuage de mot octobre rose organise par la SING SA</p>
+      
+      <div class="signin-container">
+        <button class="signin google" id="googleSignIn"><i class="fab fa-google-plus-g"></i> <span>Continuer avec Google</span> </button>
+        <button class="signin facebook" id="fbSignIn"><i class="fab fa-facebook-f"></i> <span>Continuer avec Facebook</span></button>
+      </div>
+    </div>
+  </main>
+  
+  <div class="board-container">
+    <div class="side-container">
+      <header>
+        <p id="user-displayname"></p>
+        <div class="img-container">
+          <img src="https://gobonus.ga/img/bonus.png" id="user-photo" />
+        </div>
+      </header>
+
+      <h1>Ils ont participe...</h1>
+        
+      <div class="users">
+        
+      </div>
+    </div>
+    
+    <div class="main-container">
+      <header>
+        <h2 class="question">Quel mot vous evoque la campagne Octobre Rose ?</h2>
+      </header>
+      <div class="board">
+        
+      </div>
+      <footer>
+        <div class="form-group">
+          <input type="text" placeholder="Votre reponse ici...">
+          <button class="custom-btn" id="response-btn">Ajouter ma reponse</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+  <script src="./lib/firebase.js" type="module"></script>
+  <script src="./lib/main.js" type="module"></script>
+  <script src="./lib/board.js" type="module"></script>
+</body>
+</html>

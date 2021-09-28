@@ -1,0 +1,71 @@
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  transition: 0.4s;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hidden-login {
+  height: 0vh;
+  width: 0vw;
+  padding: 0;
+}
+
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  max-width: 100%;
+  overflow: hidden;
+  
+}
+
+main .logo {
+  width: 4em;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  color: #747474;
+  padding: 1rem 0.5rem;
+}
+
+main .signin-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ccc; 
+}
+
+main footer .singsa {
+  width: 6rem;
+}
